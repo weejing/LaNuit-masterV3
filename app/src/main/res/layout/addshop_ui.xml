@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtShop"
+            android:hint="Shop" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CuisineList"
+            android:entries="@array/cuisine_arrays"
+            android:prompt="@string/cuisine_prompt"
+            android:layout_below="@id/txtShop" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPrice"
+            android:inputType="number"
+            android:layout_below="@id/CuisineList"
+            android:hint="Price ($)" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/txtFoodType"
+            android:layout_below="@id/txtPrice"
+            android:hint="Food Type" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAddress"
+            android:layout_below="@id/txtFoodType"
+            android:hint="Address" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPostal"
+            android:inputType="number"
+            android:layout_below="@id/txtAddress"
+            android:hint="Postal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Opening Hours"
+            android:id="@+id/txtOpening"
+            android:layout_below="@+id/txtPostal"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMon"
+            android:layout_below="@+id/txtOpening"
+            android:hint="Monday etc. 23:00-02:00" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTues"
+            android:layout_below="@+id/txtMon"
+            android:hint="Tuesday" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWed"
+            android:layout_below="@+id/txtTues"
+            android:hint="Wednesday" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtThurs"
+            android:layout_below="@+id/txtWed"
+            android:hint="Thursday" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtFri"
+            android:layout_below="@+id/txtThurs"
+            android:hint="Friday" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSat"
+            android:layout_below="@+id/txtFri"
+            android:hint="Saturday" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSun"
+            android:layout_below="@+id/txtSat"
+            android:hint="Sunday" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply mon timing to all days"
+            android:id="@+id/cbApply"
+            android:layout_below="@+id/txtSun" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:id="@+id/btnCreate"
+            android:layout_below="@+id/cbApply" />
+
+
+    </RelativeLayout>
+</ScrollView>

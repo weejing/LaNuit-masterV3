@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <TextView
+        android:text="Login failed"
+        android:background="#ffff7d40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/errorTxt"
+        android:textColor="#ffffffff"
+        android:visibility="invisible" />
+    <TextView
+        android:text="User Name:"
+        android:paddingTop="12dp"
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUser"
+        android:layout_gravity="center_horizontal"
+        android:autoText="false" />
+
+    <TextView
+        android:text="Password:"
+        android:id="@+id/lblPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txtPw"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:id="@+id/btnLogin"
+       />
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="293dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/btnRegister" />
+
+    <Button
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:id="@+id/btnLogout" />
+
+</LinearLayout>

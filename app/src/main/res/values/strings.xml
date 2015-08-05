@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">LaNuit</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="action_settings">Settings</string>
+    <string name="home_string">Home</string>
+    <string name="find_string">Find</string>
+    <string name="app_id">1639091866308904</string>
+    <string name="cuisine_prompt">Choose a cuisine</string>
+
+
+    <string-array name="cuisine_arrays">
+        <item>Chinese</item>
+        <item>Thai</item>
+        <item>Western</item>
+        <item>Indian</item>
+        <item>Malay</item>
+        <item>No Preference</item>
+    </string-array>
+
+</resources>
